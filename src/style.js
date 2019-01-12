@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 16px;
     font: inherit;
     vertical-align: baseline;
   }
@@ -43,5 +43,28 @@ export const GlobalStyle = createGlobalStyle`
   table {
     border-collapse: collapse;
     border-spacing: 0;
-}
+  }
+  button{
+    background-color: #fdbc2c;
+    padding:10px 15px;
+    border-color: #fdbc2c;
+    margin-top: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:bold;
+    font-size:14px;
+  }
+  p{
+    line-height: 30px;
+  }
+  .landing-primary-font {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    color:#fdbc2c;
+  }
+  .landing-container{
+    width: 80rem;
+    display: block;
+    margin:0 auto;
+  }
+
 `;
