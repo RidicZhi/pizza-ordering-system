@@ -5,6 +5,7 @@ import background from '../../statics/images/background.jpg';
 import sec21 from '../../statics/images/section2-1.png';
 import sec22 from '../../statics/images/section2-2.png';
 import sec23 from '../../statics/images/section2-3.png';
+import sec3Base from '../../statics/images/Base.png';
 
 export const LandingContainer = styled.div`
   width: 80rem;
@@ -107,6 +108,43 @@ export const FeaturesItemIcon = styled.div`
   }
 `;
 
+export const SampleWrapper = styled.div`
+  background: url(${sec3Base});
+  padding: 5rem 0;
+`;
+
+export const SampleItem = styled.div`
+  display: grid;
+  grid-template-columns: 24rem 35rem;
+  grid-column-gap: 3rem;
+  justify-content: center;
+  .left{
+    h2{
+      font-size: 3rem;
+      color: #ffffff;
+      margin-top: 0;
+    };
+    h3{
+      font-size: 2rem;
+      line-height: 6rem;
+      color:#000;
+    };
+    p{
+      font-size: 1.1rem;
+      color: #ffffff;
+    };
+    button{
+      width: 10rem;
+    };
+  };
+  .right{
+    position: relative;
+    img{
+      position: absolute;
+      top: -8rem;
+    }
+  } 
+`;
 
 
 
