@@ -6,11 +6,12 @@ import sec21 from '../../statics/images/section2-1.png';
 import sec22 from '../../statics/images/section2-2.png';
 import sec23 from '../../statics/images/section2-3.png';
 import sec3Base from '../../statics/images/Base.png';
+import ingredientsBg from '../../statics/images/number-bg.png';
 
 export const LandingContainer = styled.div`
   width: 80rem;
   display: block;
-  margin:0 auto;
+  margin: 0 auto;
 `;
 
 export const BannerWrapper = styled.div`
@@ -127,7 +128,7 @@ export const SampleItem = styled.div`
     h3{
       font-size: 2rem;
       line-height: 6rem;
-      color:#000;
+      color: #000;
     };
     p{
       font-size: 1.1rem;
@@ -144,6 +145,30 @@ export const SampleItem = styled.div`
       top: -8rem;
     }
   } 
+`;
+
+export const IngredientsWrapper = styled.div`
+  background: url(${ingredientsBg});
+  padding: 5rem 0;
+  color: #ffffff;
+`;
+export const IngredientsItems = styled.div`
+  display: grid;
+  grid-template-columns: repeat(6,auto);
+  grid-column-gap: 3rem;
+  div{
+    height: 10rem;
+    width: 10rem;
+    border: 3px solid orange;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  p{
+    margin-top: 1rem;
+  }
 `;
 
 
