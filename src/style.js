@@ -61,10 +61,4 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     color:#fdbc2c;
   }
-  .landing-container{
-    width: 80rem;
-    display: block;
-    margin:0 auto;
-  }
-
 `;
