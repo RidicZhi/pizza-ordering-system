@@ -166,8 +166,8 @@ export const IngredientsItems = styled.div`
     justify-content: center;
     align-items: center;
   }
-  p{
-    margin-top: 1rem;
+  img{
+    margin: 1rem auto;
   }
 `;
 
