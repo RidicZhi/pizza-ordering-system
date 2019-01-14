@@ -1,0 +1,99 @@
+body{
+  margin:0;
+}
+
+.section{
+  padding:1rem 2rem;
+}
+
+.details{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+}
+
+.form-control{
+  display: grid;
+  grid-gap: 0.5rem
+}
+
+.form-control > label{
+  font-weight: bold;
+  color: rgba(0,0,0,0.7);
+}
+
+.form-control > input{
+  background: #fff;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.02);
+  border-radius: 2px;
+  border: 1px solid #d7d7e7;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  outline: none;
+}
+
+.toppings{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 1rem;
+  padding: 10px 15px;
+}
+
+.toppingItem{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  background: rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+.toppingItem{
+  color: rgba(0,0,0,0.7);
+}
+
+.toppingItem.active{
+  background: #1a98e1;
+  color: #fff;
+}
+
+.toppingItem img{
+  display: block;
+  width: 35px;
+  height: 35px;
+}
+
+.toppingItem > .img{
+  padding:5px;
+  background: #e6e6e6;
+}
+
+
+.summary{
+  padding: 0;
+  list-style: none;
+}
+
+.summary > li{
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.total{
+  text-align: right;
+  font-size: 1.25rem;
+}
+
+button[type="submit"]{
+  width: 100%;
+  background: #98C550;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.9);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
